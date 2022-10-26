@@ -1,0 +1,23 @@
+<p>topbar works!!!!</p>
+<ibm-header name="[Services Management App]">
+  <!-- <ibm-header-navigation>
+    <ibm-header-item>Catalog</ibm-header-item>
+    <ibm-header-menu title="Manage">
+      <ibm-header-item>Link 1</ibm-header-item>
+      <ibm-header-item>Link 2</ibm-header-item>
+      <ibm-header-item>Link 3</ibm-header-item>
+    </ibm-header-menu>
+  </ibm-header-navigation> -->
+  <ibm-header-global>
+    <ibm-header-action #menuUser title="User Settings">
+			<svg ibmIcon="user--avatar" size="20"></svg>
+		</ibm-header-action>
+    <!-- <ibm-header-action title="action">
+      <svg ibmIcon="fade" size="20"></svg>
+    </ibm-header-action> -->
+  </ibm-header-global>
+</ibm-header>
+
+<ibm-panel [expanded]="menuUser.active">
+	<!-- <topbar-user-menu></topbar-user-menu> -->
+</ibm-panel>

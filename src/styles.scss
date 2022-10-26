@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+// If you're including all the styles for Carbon
+// @use '@carbon/styles';
+// Or if you're wanting to use just the grid
+@use '@carbon/styles/scss/grid';
+// Emit the flex-grid styles
+@include grid.flex-grid();
+
+@import "~carbon-components/scss/globals/scss/styles";
+
+* {
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.card {
+  margin: 16px;
+  padding: 16px;
+  -webkit-box-shadow: 14px 14px 49px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 14px 49px -17px rgba(0,0,0,0.75);
+  box-shadow: 14px 14px 49px -17px rgba(0,0,0,0.75);
+}
